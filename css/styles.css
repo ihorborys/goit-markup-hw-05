@@ -546,7 +546,7 @@ body {
     cursor: pointer;
 }
 
-.modal-btn-icon {
+.modal-btn-icon.ftr {
     fill: var(--white);
 }
 
