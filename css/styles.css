@@ -757,9 +757,7 @@ color: var(--light-slate);
     cursor: pointer;
 }
 
-.modal-form-agreement-input:checked
-+ .modal-form-agreement-desc
-> .modal-form-checkbox {
+.modal-form-agreement-input:checked + .modal-form-agreement-desc > .modal-form-checkbox {
     background-color: var(--ocean);
     border-color: transparent;
 }
@@ -769,10 +767,7 @@ color: var(--light-slate);
     opacity: 0;
 }
 
-.modal-form-agreement-input:checked
-+ .modal-form-agreement-desc
-> .modal-form-checkbox
-> .modal-form-checkbox-icon {
+.modal-form-agreement-input:checked + .modal-form-agreement-desc > .modal-form-checkbox > .modal-form-checkbox-icon {
     opacity: 1;
 }
 
