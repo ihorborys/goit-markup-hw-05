@@ -818,6 +818,7 @@ color: var(--light-slate);
 
 .modal-btn-send {
     display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     padding: 0;
