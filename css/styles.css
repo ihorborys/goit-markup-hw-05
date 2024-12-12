@@ -574,8 +574,7 @@ body {
     pointer-events: none;
     visibility: hidden;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -619,7 +618,7 @@ body {
     border-radius: 50%;
     border: 1px solid var(--border-cl);
 
-    transition: background-color, border, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
@@ -658,6 +657,14 @@ body {
 input, textarea {
     display: block;
     width: 100%;
+}
+
+.modal-form-wrapper {
+    margin-bottom: 8px;
+}
+
+.modal-form-wrapper.textarea {
+    margin-bottom: 16px;
 }
 
 .modal-form-title {
@@ -701,13 +708,11 @@ color: var(--light-slate);
     outline: transparent;
     background-color: transparent;
 
-    transition-property: border-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-icon {
-    transition-property: fill;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field .modal-btn-icon {
@@ -733,9 +738,9 @@ color: var(--light-slate);
     letter-spacing: 0.04em;
 
     outline: transparent;
+    background-color: transparent;
 
-    transition-property: border-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-textarea::placeholder {
@@ -774,18 +779,18 @@ color: var(--light-slate);
     border: 1px solid var(--navy-blue-modal);
     fill: transparent;
 
-    transition: background-color, border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
 
 .modal-form-agreement-input:checked + .modal-form-agreement-desc > .modal-form-checkbox {
     background-color: var(--ocean);
+    fill: var(--cloud);
     border: none;
 }
 
 .modal-form-checkbox-icon {
-    fill: var(--cloud);
     opacity: 0;
 }
 
@@ -836,8 +841,7 @@ color: var(--light-slate);
     border: var(--dairy);
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 
-    transition-property: background-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
