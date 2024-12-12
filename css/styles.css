@@ -504,9 +504,8 @@ body {
     margin-bottom: 16px;
 }
 
-.footer-form-field {
+.footer-form {
     display: flex;
-    margin-top: 16px;
 }
 
 .footer-form-input {
